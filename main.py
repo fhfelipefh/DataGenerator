@@ -41,7 +41,7 @@ def generateSalesman(qtdSalesman):
         fileQ.writelines(text)
         text.clear()
 
-    fileQ.close()
+    
 
 
 def generateCustomers(qtdCustumers):
@@ -58,7 +58,7 @@ def generateCustomers(qtdCustumers):
         text.append(identifier+"ç"+cnpj+"ç"+nome+"ç"+bussinesArea+"\n")
 
     fileQ.writelines(text)
-    fileQ.close()
+    
 
 
 def generateSales(qtdSales):
