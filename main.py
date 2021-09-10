@@ -5,7 +5,7 @@ from random import randint
 
 def randomItems():
     controller = 0
-    qtdItems = randint(1, 200)
+    qtdItems = randint(1, 250)
     strItems = "["
     while (controller < qtdItems):
         itemID = str(randint(0, 999))
@@ -19,7 +19,7 @@ def randomItems():
 
 
 def randomDataName():
-    randomFilename = str(randint(0, 9999))
+    randomFilename = "name"+str(randint(0, 9999))
     return randomFilename
 
 
@@ -43,13 +43,13 @@ def generateSalesman(qtdSalesman):
     
 
 
-def generateCustomers(qtdCustumers):
+def generateCustomers(qtdCostumers):
     fileQ = open('data'+rDataName+'.dat', mode="a+", encoding="utf-8")
     controller = 0
     identifier = "002"
     text = list()
 
-    while (controller < qtdCustumers):
+    while (controller < qtdCostumers):
         cnpj = str(randint(1000000000000, 9999999999999))
         nome = "name"+str(randint(0, 999))
         bussinesArea = str(randint(1000, 200000))
@@ -68,13 +68,8 @@ def generateSales(qtdSales):
 
     while (controller < qtdSales):
         saleID = str(randint(10, 99))
-        itemID = str(randint(0, 999))
-        quantity = str(randint(0, 999))
-        price = str(randint(0, 999))
-        name = "name"+str(randint(0, 999))
-        bussinesArea = str(randint(1000, 200000))
         controller = controller + 1
-        text.append(identifier+"ç"+saleID+"ç"+randomItems()+"ç"+name+"\n")
+        text.append(identifier+"ç"+saleID+"ç"+randomItems()+"ç"+randomDataName()+"\n")
 
     fileQ.writelines(text)
     fileQ.close()
