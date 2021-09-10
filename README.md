@@ -14,7 +14,12 @@
 - Inicialização: 
   
   Coloque o arquivo main.py na pasta Data/in do diretório onde se encontra o DataApp e execute utilizando o terminal com o comando: 
+  
 
-  > python3 main.py
+  - `python3 main.py`
+  
 
   Em seguida informe quantos arquivos deseja gerar, e as propriedades dos arquivos gerados. 
+
+  > A geração de arquivos é ilustrativa e tem como objetivo testar o desempenho do DataApp. <br>
+  
