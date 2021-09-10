@@ -51,7 +51,7 @@ def generateCustomers(qtdCustumers):
 
     while (controller < qtdCustumers):
         cnpj = str(randint(1000000000000, 9999999999999))
-        nome = "Felipe"+str(randint(0, 999))
+        nome = "name"+str(randint(0, 999))
         bussinesArea = str(randint(1000, 200000))
         controller = controller + 1
         text.append(identifier+"ç"+cnpj+"ç"+nome+"ç"+bussinesArea+"\n")
